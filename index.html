@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ============================================================
+       GANTI: Ubah judul tab browser sesuai nama kamu
+       ============================================================ -->
+  <title>Yutha Antus — Visual Creator</title>
+  <meta name="description" content="Portfolio Fotografi & Graphic Design oleh Yutha Antus" />
+ 
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ 
+  <!-- Phosphor Icons (lightweight icon set) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+ 
+  <!-- Link ke stylesheet utama -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- ============================================================
+       NAVBAR — sticky, blur backdrop, transparan
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- GANTI: Nama / logo kamu -->
+      <a href="#home" class="nav-logo">GALEYM<span>.</span></a>
+ 
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"       class="nav-link">Home</a>
+        <a href="#about"      class="nav-link">About</a>
+        <a href="#gallery"    class="nav-link">Gallery</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact"    class="nav-link">Contact</a>
+      </nav>
+ 
+      <!-- Hamburger untuk mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+ 
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="home">
+    <!-- ============================================================
+         GANTI BACKGROUND HERO:
+         Buka style.css, cari selector ".hero" lalu ubah nilai
+         background-image ke path foto milikmu, contoh:
+         background-image: url('assets/images/hero-bg.jpg');
+         ============================================================ -->
+    <div class="hero-noise"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Visual Creator · Based in Indonesia</p>
+      <h1 class="hero-title">
+        Light is the ink.<br />
+        <em>The world is my canvas.</em>
+      </h1>
+      <p class="hero-sub">
+        Photographer &amp; Graphic Designer — crafting stories through frames,
+        colour, and silence.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#gallery" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Collaborate</a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+ 
+        <!-- Foto Profil -->
+        <div class="about-img-wrap reveal">
+          <div class="about-img-frame">
+            <!-- ============================================================
+                 UPLOAD FOTO PROFIL KAMU DI SINI
+                 Simpan foto di: assets/images/fotoprofil.jpg
+                 Lalu ganti src di bawah ini menjadi: src="assets/images/fotoprofil.jpg"
+                 ============================================================ -->
+            <img
+              src="assets/images/fotoprofil.jpg"
+              alt="Foto Profil"
+              class="about-img"
+              loading="lazy"
+            />
+            <div class="about-img-accent"></div>
+          </div>
+          <!-- Badge kecil -->
+          <div class="about-badge">
+            <i class="ph ph-camera"></i>
+            <span>5+ Years</span>
+          </div>
+        </div>
+ 
+        <!-- Teks & Skills -->
+        <div class="about-text reveal">
+          <p class="section-eyebrow">About Me</p>
+          <!-- GANTI: Nama lengkap kamu -->
+          <h2 class="section-title">Kristina Yutasia Antus</h2>
+ 
+          <!-- GANTI: Paragraf deskripsi dirimu sendiri -->
+          <p class="about-desc">
+            Selamat datang di portofolio saya. Saya adalahh <strong>Visual Creator</strong> yang percaya bahwa
+            setiap momen menyimpan keindahan yang menunggu untuk diabadikan.
+            Dengan latar belakang di fotografi dan desain grafis, saya memadukan
+            teknik yang kuat dengan kepekaan artistik untuk menghasilkan karya
+            yang tidak hanya indah secara visual, tetapi juga berbicara dari hati.
+          </p>
+          <p class="about-desc">
+            Berbasis di Indonesia, saya berpengalaman dalam berbagai organisai, event dan individu — membantu mereka menemukan identitas visual
+            yang autentik dan berkesan.
+          </p>
+ 
+          <!-- Skills List -->
+          <div class="skills-grid">
+            <!-- GANTI / TAMBAH: Daftar skill kamu -->
+            <div class="skill-pill"><i class="ph ph-camera"></i> Photography</div>
+            <div class="skill-pill"><i class="ph ph-sun"></i> Lightroom</div>
+            <div class="skill-pill"><i class="ph ph-squares-four"></i> Canva</div>
+            <div class="skill-pill"><i class="ph ph-film-strip"></i> Videography</div>
+            <div class="skill-pill"><i class="ph ph-palette"></i> Color Grading</div>
+          </div>
+ 
+          <a href="#gallery" class="btn btn-primary mt-btn">See My Work →</a>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       GALLERY SECTION
+       ============================================================ -->
+  <section class="gallery-section section" id="gallery">
+    <div class="container">
+ 
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-title">Selected Works</h2>
+        <p class="section-sub">A curated collection of my finest photography and design projects.</p>
+      </div>
+ 
+      <!-- Filter Buttons -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="photography">Photography</button>
+        <button class="filter-btn" data-filter="design">Graphic Design</button>
+      </div>
+ 
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+ 
+        <!-- ============================================================
+             ITEM GALERI — FOTOGRAFI (1–10)
+             Ganti src="..." dengan path ke folder: assets/photography/
+             Contoh: src="assets/photography/golden-hour.jpg"
+             ============================================================ -->
+ 
+        <!-- FOTO 1 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Landscape"
+             data-desc="Dalam simpul hitam dan ungu lembut, sebuah momen tumbuh - generasi muda
+merajut mimpi di panggung yang membelah keheningan. Lampu-lampu merah
+muda mengambang seperti harapan, menyaksikan kisah yang sedang ditulis."
+             data-img="assets/photography/1.jpg">
+          <!-- GANTI src → assets/photography/golden-hour.jpg -->
+          <img src="assets/photography/1.jpg"
+               alt="Landscape" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Landscape</h3>
+            <p class="card-desc">Integer 7 · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 2 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Landscape"
+             data-desc="Kita adalah bait-bait puisi yang ditulis dengan tinta kegelapan, bersandar pada dinding waktu, menanti fajar melarutkan suny"
+             data-img="assets/photography/2.jpg">
+          <!-- GANTI src → assets/photography/urban-geometry.jpg -->
+          <img src="assets/photography/2.jpg"
+               alt="Landscape" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Siluet</h3>
+            <p class="card-desc">Ruangan kelas · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 3 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Landscape"
+             data-desc="Di bawah langit jingga dan atap pusaka, suara-suara berjalin dalam simfoni cahaya, merayakan kebersamaan yang abadi dalam bingkai waktu"
+             data-img="assets/photography/3.jpg">
+          <!-- GANTI src → assets/photography/still-life-bloom.jpg -->
+          <img src="assets/photography/3.jpg"
+               alt="Landscape" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Landscape</h3>
+            <p class="card-desc">Integer 6 · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 4 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Landscape"
+             data-desc="Bahu-bahu yang bersandar pada waktu, menatap megahnya asa di masa depan."
+             data-img="assets/photography/4.jpg">
+          <!-- GANTI src → assets/photography/portrait-ines.jpg -->
+          <img src="assets/photography/4.jpg"
+               alt="Portrait Ines" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">siluet</h3>
+            <p class="card-desc">semester 2 · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 5 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Landscape"
+             data-desc="Sepotong sore di tepian masa depan. Antara bangku besi yang dingin dan sorot mata yang penuh harap. Kami adalah saksi bisu, bagaimana sebuah 'Visi' tumbuh dalam jiwa-jiwa muda yang rindu akan perubahan."
+             data-img="assets/photography/5.jpg">
+          <!-- GANTI src → assets/photography/mist-over-ridge.jpg -->
+          <img src="assets/photography/5.jpg"
+               alt="Landscape" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Landscape</h3>
+            <p class="card-desc">Lorong FTK · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 6 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Rain & Neon"
+             data-desc="Berdiri beriringan menantang lorong waktu, tatapan-tatapan tegas yang menyimpan beribu mimpi terpendam. Kami adalah sekumpulan cerita yang berjalan bersama, saling menguatkan pundak di kala melangkah menuju hari esok yang masih rahasia."
+             data-img="assets/photography/6.jpg">
+          <!-- GANTI src → assets/photography/rain-neon.jpg -->
+          <img src="assets/photography/6.jpg"
+               alt="Rain and Neon" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Rain &amp; Neon</h3>
+            <p class="card-desc">Street · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 7 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Symmetry"
+             data-desc="Biru langit berpadu dengan tenangnya samudera, tempat perahu-perahu kayu bersandar pasrah pada ombak yang berbisik lirik. Sebuah pelarian sunyi, di mana penat larut bersama asinnya lautan dan luasnya cakrawala yang tanpa batas."
+             data-img="assets/photography/7.jpg">
+          <!-- GANTI src → assets/photography/symmetry.jpg -->
+          <img src="assets/photography/7.jpg"
+               alt="Symmetry" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Symmetry</h3>
+            <p class="card-desc">Architecture · 2023</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 8 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Desert Solitude"
+             data-desc="Di bawah megahnya atap arena, peluh dan ambisi berkejaran di atas lantai kayu yang menjadi saksi perjuangan. Setiap langkah, operan, dan sorot mata adalah bentuk bahasa tanpa suara—tentang kerja keras, kerja sama, dan mimpi yang harus diperjuangkan hingga peluit akhir berbunyi."
+             data-img="assets/photography/8.jpg">
+          <!-- GANTI src → assets/photography/desert-solitude.jpg -->
+          <img src="assets/photography/8.jpg"
+               alt="Desert Solitude" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Desert Solitude</h3>
+            <p class="card-desc">Landscape · 2023</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 9 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Forest Cathedral"
+             data-desc="Gemuruh air yang jatuh dari ketinggian rimba, memecah keheningan hutan dengan simfoni alam yang megah. Cahaya matahari yang menyelusup di antara rimbunnya dedaunan hijau, seolah menjadi saksi betapa indahnya rahasia yang tersembunyi di balik pelukan bumi."
+             data-img="assets/photography/9.jpg">
+          <!-- GANTI src → assets/photography/forest-cathedral.jpg -->
+          <img src="assets/photography/9.jpg"
+               alt="Forest Cathedral" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Forest Cathedral</h3>
+            <p class="card-desc">Nature · 2022</p>
+          </div>
+        </div>
+ 
+        <!-- FOTO 10 -->
+        <div class="gallery-card reveal" data-category="photography"
+             data-title="Blue Hour Pier"
+             data-desc="Berdiri anggun di atas hamparan permadani hijau yang membentang luas hingga ke batas langit. Di kelilingi oleh kawanan yang tenang di bawah awan yang syahdu, langkah ini terasa ringan, menyatu dengan kedamaian alam yang tak tersentuh bisingnya dunia."
+             data-img="assets/photography/10.jpg">
+          <!-- GANTI src → assets/photography/blue-hour-pier.jpg -->
+          <img src="assets/photography/10.jpg"
+               alt="Blue Hour Pier" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Photography</span>
+            <h3 class="card-title">Blue Hour Pier</h3>
+            <p class="card-desc">Seascape · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- ============================================================
+             ITEM GALERI — GRAPHIC DESIGN (1–10)
+             Ganti src="..." dengan path ke folder: assets/design/
+             Contoh: src="assets/design/brand-identity-luna.png"
+             ============================================================ -->
+ 
+        <!-- DESAIN 1 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Brand Identity — Luna"
+             data-desc="Identitas visual lengkap untuk brand kecantikan premium: logo, colour palette, tipografi, dan stationery."
+             data-img="assets/design/1.png">
+          <!-- GANTI src → assets/design/brand-identity-luna.png -->
+          <img src="assets/design/1.png"
+               alt="Brand Identity Luna" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Brand Identity — Luna</h3>
+            <p class="card-desc">Branding · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 2 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Poster — Echo Festival"
+             data-desc="Poster event musik indie underground dengan typografi eksperimental dan palet monokromatik yang bold."
+             data-img="assets/design/2.png">
+          <!-- GANTI src → assets/design/poster-echo-festival.png -->
+          <img src="assets/design/2.png"
+               alt="Poster Echo Festival" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Poster — Echo Festival</h3>
+            <p class="card-desc">Print Design · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 3 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="App UI — Calm.ly"
+             data-desc="Desain antarmuka aplikasi meditasi dengan gaya minimalis soft — prototype interaktif di Figma."
+             data-img="assets/design/3.png">
+          <!-- GANTI src → assets/design/app-ui-calmly.png -->
+          <img src="assets/design/3.png"
+               alt="App UI Calm.ly" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">App UI — Calm.ly</h3>
+            <p class="card-desc">UI/UX Design · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 4 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Social Media Kit"
+             data-desc="Paket konten sosial media 30 template untuk brand fashion lokal — feed IG + Story + Reels cover."
+             data-img="assets/design/4.png">
+          <!-- GANTI src → assets/design/social-media-kit.png -->
+          <img src="assets/design/4.png"
+               alt="Social Media Kit" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Social Media Kit</h3>
+            <p class="card-desc">Digital Design · 2023</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 5 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Logo — Araka Coffee"
+             data-desc="Logo dan identitas visual untuk specialty coffee shop independen dengan konsep 'roots & ritual'."
+             data-img="assets/design/5.png">
+          <!-- GANTI src → assets/design/logo-araka-coffee.png -->
+          <img src="assets/design/5.png"
+               alt="Logo Araka Coffee" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Logo — Araka Coffee</h3>
+            <p class="card-desc">Logo Design · 2023</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 6 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Packaging — Hikari Tea"
+             data-desc="Desain kemasan teh premium Jepang dengan ilustrasi tangan dan finishing foil gold."
+             data-img="assets/design/6.png">
+          <!-- GANTI src → assets/design/packaging-hikari-tea.png -->
+          <img src="assets/design/6.png"
+               alt="Packaging Hikari Tea" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Packaging — Hikari Tea</h3>
+            <p class="card-desc">Packaging · 2023</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 7 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Editorial Layout"
+             data-desc="Layout majalah digital 12 halaman untuk konten lifestyle dengan grid editorial yang dinamis."
+             data-img="assets/design/7.png">
+          <!-- GANTI src → assets/design/editorial-layout.png -->
+          <img src="assets/design/7.png"
+               alt="Editorial Layout" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Editorial Layout</h3>
+            <p class="card-desc">Print / Digital · 2022</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 8 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Mural Concept — Ruang Kota"
+             data-desc="Konsep mural urban untuk program revitalisasi ruang publik di kawasan Kota Tua."
+             data-img="assets/design/8.png">
+          <!-- GANTI src → assets/design/mural-concept-ruang-kota.png -->
+          <img src="assets/design/8.png"
+               alt="Mural Concept Ruang Kota" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Mural Concept — Ruang Kota</h3>
+            <p class="card-desc">Illustration · 2022</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 9 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Web Design — Volta Studio"
+             data-desc="Desain web portfolio agensi kreatif dengan aesthetic glassmorphism dan animasi scroll-trigger."
+             data-img="assets/design/9.png">
+          <!-- GANTI src → assets/design/web-design-volta-studio.png -->
+          <img src="assets/design/9.png"
+               alt="Web Design Volta Studio" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Web Design — Volta Studio</h3>
+            <p class="card-desc">Web Design · 2024</p>
+          </div>
+        </div>
+ 
+        <!-- DESAIN 10 -->
+        <div class="gallery-card reveal" data-category="design"
+             data-title="Infographic Series"
+             data-desc="Seri 6 infografis data visual untuk kampanye kesadaran lingkungan, dipublikasikan secara digital."
+             data-img="assets/design/10.png">
+          <!-- GANTI src → assets/design/infographic-series.png -->
+          <img src="assets/design/10.png"
+               alt="Infographic Series" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-cat">Graphic Design</span>
+            <h3 class="card-title">Infographic Series</h3>
+            <p class="card-desc">Data Viz · 2023</p>
+          </div>
+        </div>
+ 
+      </div><!-- /gallery-grid -->
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       LIGHTBOX / MODAL
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox-info">
+        <span class="lightbox-cat" id="lightboxCat"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ============================================================
+       EXPERIENCE & ACHIEVEMENTS SECTION
+       ============================================================ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Journey</p>
+        <h2 class="section-title">Experience &amp; Achievements</h2>
+      </div>
+ 
+      <div class="timeline">
+ 
+        <!-- ============================================================
+             GANTI: Isi dengan pengalaman / pencapaian NYATA kamu
+             Tambah atau hapus blok .timeline-item sesuai kebutuhan
+             ============================================================ -->
+ 
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2023</span>
+            <h3 class="tl-title">Seksi Dokumentasi</h3>
+            <p class="tl-desc">seksi dokumentasi pada kegiatan forum PIK-R tingkat Kabupaten Manggarai.</p>
+            <div class="tl-tags">
+              <span>Forum PIK-R</span><span>Dokumentasi</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2023</span>
+            <h3 class="tl-title">Seksi Dokumentasi</h3>
+            <p class="tl-desc">seksi dokumentasi pada turnamen futsal KPFM 1, yang diadakan oleh komunitas pencinta futsal Manggarai .</p>
+            <div class="tl-tags">
+              <span>KPFM</span><span>Dokumentasi</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2025</span>
+            <h3 class="tl-title">Sie PDD</h3>
+            <p class="tl-desc">Aanggota sie PDD dalam perayaan HUT dan Natal Bersama Keluarga Mahasiswa Katolik Uiversitas Pendidikan Ganesha.</p>
+            <div class="tl-tags">
+              <span>HUT KMK</span><span>Design</span><span>Dokumentasi</span><span>Teknisi</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Item 4 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2026</span>
+            <h3 class="tl-title">Sie PDD</h3>
+            <p class="tl-desc">Anggota sie PDD dalam Rapat Kerja Tahunan orgnasisasi keluarga Mahasiswa Katolik Uiversitas Pendidikan Ganesha.</p>
+            <div class="tl-tags">
+              <span>Raker KMK</span><span>Design</span><span>Dokumentasi</span><span>Teknisi</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Item 5 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2026</span>
+            <h3 class="tl-title"> sie PDD</h3>
+            <p class="tl-desc">Anggota sie PDD dalam malam persaudaran dan ret-ret organsisasi Keluarga Mahasiswa Katolik Uiversitas Pendidikan Ganesha.</p>
+            <div class="tl-tags">
+              <span>Ret-ret KMK</span><span>Design</span><span>Dokumentasi</span><span>Teknisi</span>
+            </div>
+          </div>
+        </div>
+
+         <!-- Item 6 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2023</span>
+            <h3 class="tl-title">Juara 3 Fotografi FLS2N</h3>
+            <p class="tl-desc">Meraihjuara 3 FOTOGRAFI FLS2N tahun 2023, tingkat SMA sekabupaten Manggarai.</p>
+            <div class="tl-tags">
+              <span>Juara 3</span><span>FLS2N</span><span>Fotografi</span>
+            </div>
+          </div>
+        </div>
+
+         <!-- Item 7 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2023</span>
+            <h3 class="tl-title">Pameran Foto</h3>
+            <p class="tl-desc">Karya foto pilihan, pada pameran foto yang di adakan di RBA bersama dinas pertanian Kabupaten Manggarai, dalam rangka memperingati hari tani nasional.</p>
+            <div class="tl-tags">
+              <span>Pameran Foto</span><span>Hari Tani Nasional</span>
+            </div>
+          </div>
+        </div>
+
+         <!-- Item 8 -->
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-year">2023</span>
+            <h3 class="tl-title">Film Pendek</h3>
+            <p class="tl-desc"> Tergabung dalam tim lomba film pendek, yang keluar sebagai juara 4 film pendek FLS2N tingkat SMA sekabupaten Manggarai.</p>
+            <div class="tl-tags">
+              <span>Film Pendek</span><span>FLS2N</span><span>Juara 4</span>
+            </div>
+          </div>
+        </div>
+ 
+      </div><!-- /timeline -->
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+ 
+        <!-- Teks kiri -->
+        <div class="contact-text reveal">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Create<br /><em>Something Beautiful.</em></h2>
+          <p class="contact-desc">
+            Tertarik berkolaborasi untuk project foto, desain, atau keduanya?
+            Saya selalu terbuka untuk percakapan kreatif.
+          </p>
+ 
+          <!-- Info kontak -->
+          <ul class="contact-list">
+            <!-- GANTI: Email kamu -->
+            <li><i class="ph ph-envelope"></i> <a href="yutafoto174.com">hello@yutafoto174.com</a></li>
+            <!-- GANTI: Lokasi kamu -->
+            <li><i class="ph ph-map-pin"></i> Bali, Indonesia</li>
+            <!-- GANTI: Ketersediaan kamu -->
+            <li><i class="ph ph-clock"></i> Available for freelance </li>
+          </ul>
+ 
+          <!-- CTA Buttons -->
+          <div class="contact-cta">
+            <!-- ============================================================
+                 GANTI: Nomor WhatsApp kamu (format internasional, tanpa +)
+                 Contoh: 6281234567890 = +62 812-3456-7890
+                 Teks template pesan WA bisa kamu edit di bagian "text=..."
+                 ============================================================ -->
+            <a href="https://wa.me/628135237439?text=Halo%20Yutha!%20Saya%20tertarik%20untuk%20berkolaborasi%20dalam%20proyek%20fotografi%2Fdesain.%20Boleh%20kita%20diskusi%3F"
+               target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <i class="ph ph-whatsapp-logo"></i>
+              Hubungi via WhatsApp
+            </a>
+ 
+            <!-- ============================================================
+                 GANTI: Link Instagram kamu
+                 Contoh: https://instagram.com/namainstagramkamu
+                 ============================================================ -->
+            <a href="https://instagram.com/yuthaantus"
+               target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+              <i class="ph ph-instagram-logo"></i>
+              Instagram Portfolio
+            </a>
+          </div>
+        </div>
+ 
+        <!-- Visual kanan — stats -->
+        <div class="contact-stats reveal">
+          <!-- GANTI: Angka statistik sesuai pencapaian nyata kamu -->
+          <div class="stat-card">
+            <span class="stat-num">5<span class="stat-plus">+</span></span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3<span class="stat-plus">+</span></span>
+            <span class="stat-label">Organization</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4<span class="stat-plus">+</span></span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1<span class="stat-plus">+</span></span>
+            <span class="stat-label">Awards Won</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <!-- GANTI: Nama / tagline footer -->
+      <div class="footer-logo">GAKLEYM<span>.</span></div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Yutha Antus. Crafted with light &amp; intent.
+      </p>
+      <div class="footer-socials">
+        <!-- GANTI: Link media sosial kamu -->
+        <a href="https://instagram.com/yuthaantus" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://behance.net/yuthaantus"   target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="ph ph-behance-logo"></i></a>
+        <a href="mailto:hello@yuthaantus.com"      aria-label="Email"><i class="ph ph-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Back to top button -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+ 
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
